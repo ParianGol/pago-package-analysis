@@ -1,0 +1,255 @@
+---
+SPDXID: SPDXRef-DOCUMENT
+creationInfo:
+  comment: '
+
+    This document was created using license information and a generator from Fossology.
+
+    It contains the license and copyright analysis of jQuery-MD5-2011.06.13.
+
+    Please check LicenseComments for explanations of concluded licenses.
+
+    '
+  created: '2024-03-14T12:59:37Z'
+  creators:
+  - 'Tool: fossology-4.4.0'
+  - 'Person: Parian Golchin'
+  licenseListVersion: '3.22'
+dataLicense: CC0-1.0
+documentDescribes:
+- SPDXRef-upload89
+documentNamespace: http://fossology-6674c79fbf-2qzn2/repo/SPDX2TV_jQuery-MD5-b985fce4e867773e5fb7a29b4fb5df74c53595d0.zip_1710421177.spdx
+files:
+- SPDXID: SPDXRef-item440278
+  checksums:
+  - algorithm: SHA1
+    checksumValue: 0abc4b9564d71cf8d23b7f5b661552092c8e7d67
+  - algorithm: SHA256
+    checksumValue: 41f41aa3f32ea20a820c36488c40e2acb8f022c35d91c69a1d1c75e63edebf54
+  - algorithm: MD5
+    checksumValue: c629663d7fe3432af0760b26d4b546e7
+  copyrightText: ' Copyright 2010, Sebastian Tschan https://blueimp.net (mail@blueimp.net)
+
+    Copyright (C) Paul Johnston 1999 - 2009 Other contributors: Greg Holt, Andrew
+    Kepert, Ydnar, Lostinet '
+  fileName: jQuery-MD5-b985fce4e867773e5fb7a29b4fb5df74c53595d0.zip/jQuery-MD5-b985fce4e867773e5fb7a29b4fb5df74c53595d0/jquery.md5.js
+  licenseComments: ' The information in the file is: Distributed under the BSD license
+    https://pajhome.org.uk/crypt/md5/ We followed the link and there it said: distributed
+    under the BSD License   [BSD license](https://pajhome.org.uk/site/legal.html#bsdlicense).
+    Thus, we concluded BSD License. '
+  licenseConcluded: NOASSERTION
+  licenseInfoInFiles:
+  - LicenseRef-MIT
+  - LicenseRef-fossology-BSD
+  - LicenseRef-fossology-CC-BY
+- SPDXID: SPDXRef-item440276
+  checksums:
+  - algorithm: SHA1
+    checksumValue: 5d44a28c6749a4e368815fd80e11b32fb29b5d79
+  - algorithm: SHA256
+    checksumValue: 9e4abcbdcba6777cd36bd2c5b2bbc09390b88e5a048dc7df44e05189334e70e5
+  - algorithm: MD5
+    checksumValue: f072e5d1e54f47dc049f1bab5ba378bf
+  copyrightText: ' Copyright 2010, Sebastian Tschan https://blueimp.net (mail@blueimp.net) '
+  fileName: jQuery-MD5-b985fce4e867773e5fb7a29b4fb5df74c53595d0.zip/jQuery-MD5-b985fce4e867773e5fb7a29b4fb5df74c53595d0/tests/index.html
+  licenseConcluded: LicenseRef-MIT
+  licenseInfoInFiles:
+  - LicenseRef-MIT
+  - LicenseRef-fossology-CC-BY
+- SPDXID: SPDXRef-item440277
+  checksums:
+  - algorithm: SHA1
+    checksumValue: 3119e7ac2dc8578776a796471b6c723ed7d159e6
+  - algorithm: SHA256
+    checksumValue: b99ce37e2df3ddfcf2009c4008df95c4aecccab2a8087c7bad00029be26fefa7
+  - algorithm: MD5
+    checksumValue: b7b19f97f07551249be4c997e365e727
+  copyrightText: ' Copyright 2010, Sebastian Tschan https://blueimp.net (mail@blueimp.net) '
+  fileName: jQuery-MD5-b985fce4e867773e5fb7a29b4fb5df74c53595d0.zip/jQuery-MD5-b985fce4e867773e5fb7a29b4fb5df74c53595d0/tests/tests.js
+  licenseConcluded: LicenseRef-MIT
+  licenseInfoInFiles:
+  - LicenseRef-MIT
+  - LicenseRef-fossology-CC-BY
+- SPDXID: SPDXRef-item440279
+  checksums:
+  - algorithm: SHA1
+    checksumValue: 482f07fc8bcb597c511d72c2e331a32eaff3e3d4
+  - algorithm: SHA256
+    checksumValue: a0203b0a0db211d9d762ab753afba8b517c8c842009ce75db66b260673f90a1b
+  - algorithm: MD5
+    checksumValue: be13a8663cb4da42305b90df91b6863d
+  copyrightText: NOASSERTION
+  fileName: jQuery-MD5-b985fce4e867773e5fb7a29b4fb5df74c53595d0.zip/jQuery-MD5-b985fce4e867773e5fb7a29b4fb5df74c53595d0/README.txt
+  licenseConcluded: NOASSERTION
+  licenseInfoInFiles:
+  - LicenseRef-MIT
+  - LicenseRef-fossology-CC-BY
+- SPDXID: SPDXRef-item440280
+  checksums:
+  - algorithm: SHA1
+    checksumValue: d7f5ee20a100641701442776b191b1cd9e75768d
+  - algorithm: SHA256
+    checksumValue: 3315e01dbab24e8a697e18b07a3ab38085ee55f1c39f75f48884ce3eba4f83cd
+  - algorithm: MD5
+    checksumValue: 1a4d74f496c39696ef3066554f75dd7e
+  copyrightText: NOASSERTION
+  fileName: jQuery-MD5-b985fce4e867773e5fb7a29b4fb5df74c53595d0.zip/jQuery-MD5-b985fce4e867773e5fb7a29b4fb5df74c53595d0/README.md
+  licenseConcluded: NOASSERTION
+  licenseInfoInFiles:
+  - LicenseRef-MIT
+  - LicenseRef-fossology-CC-BY
+hasExtractedLicensingInfos:
+- extractedText: " Creative Commons Legal Code\n\nCC0 1.0 Universal\n\n    CREATIVE\
+    \ COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE\n    LEGAL SERVICES.\
+    \ DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN\n    ATTORNEY-CLIENT RELATIONSHIP.\
+    \ CREATIVE COMMONS PROVIDES THIS\n    INFORMATION ON AN \"AS-IS\" BASIS. CREATIVE\
+    \ COMMONS MAKES NO WARRANTIES\n    REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION\
+    \ OR WORKS\n    PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING\
+    \ FROM\n    THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED\n  \
+    \  HEREUNDER.\n\nStatement of Purpose\n\nThe laws of most jurisdictions throughout\
+    \ the world automatically confer\nexclusive Copyright and Related Rights (defined\
+    \ below) upon the creator\nand subsequent owner(s) (each and all, an \"owner\"\
+    ) of an original work of\nauthorship and/or a database (each, a \"Work\").\n\n\
+    Certain owners wish to permanently relinquish those rights to a Work for\nthe\
+    \ purpose of contributing to a commons of creative, cultural and\nscientific works\
+    \ (\"Commons\") that the public can reliably and without fear\nof later claims\
+    \ of infringement build upon, modify, incorporate in other\nworks, reuse and redistribute\
+    \ as freely as possible in any form whatsoever\nand for any purposes, including\
+    \ without limitation commercial purposes.\nThese owners may contribute to the\
+    \ Commons to promote the ideal of a free\nculture and the further production of\
+    \ creative, cultural and scientific\nworks, or to gain reputation or greater distribution\
+    \ for their Work in\npart through the use and efforts of others.\n\nFor these\
+    \ and/or other purposes and motivations, and without any\nexpectation of additional\
+    \ consideration or compensation, the person\nassociating CC0 with a Work (the\
+    \ \"Affirmer\"), to the extent that he or she\nis an owner of Copyright and Related\
+    \ Rights in the Work, voluntarily\nelects to apply CC0 to the Work and publicly\
+    \ distribute the Work under its\nterms, with knowledge of his or her Copyright\
+    \ and Related Rights in the\nWork and the meaning and intended legal effect of\
+    \ CC0 on those rights.\n\n1. Copyright and Related Rights. A Work made available\
+    \ under CC0 may be\nprotected by copyright and related or neighboring rights (\"\
+    Copyright and\nRelated Rights\"). Copyright and Related Rights include, but are\
+    \ not\nlimited to, the following:\n\n  i. the right to reproduce, adapt, distribute,\
+    \ perform, display,\n     communicate, and translate a Work;\n ii. moral rights\
+    \ retained by the original author(s) and/or performer(s);\niii. publicity and\
+    \ privacy rights pertaining to a person's image or\n     likeness depicted in\
+    \ a Work;\n iv. rights protecting against unfair competition in regards to a Work,\n\
+    \     subject to the limitations in paragraph 4(a), below;\n  v. rights protecting\
+    \ the extraction, dissemination, use and reuse of data\n     in a Work;\n vi.\
+    \ database rights (such as those arising under Directive 96/9/EC of the\n    \
+    \ European Parliament and of the Council of 11 March 1996 on the legal\n     protection\
+    \ of databases, and under any national implementation\n     thereof, including\
+    \ any amended or successor version of such\n     directive); and\nvii. other similar,\
+    \ equivalent or corresponding rights throughout the\n     world based on applicable\
+    \ law or treaty, and any national\n     implementations thereof.\n\n2. Waiver.\
+    \ To the greatest extent permitted by, but not in contravention\nof, applicable\
+    \ law, Affirmer hereby overtly, fully, permanently,\nirrevocably and unconditionally\
+    \ waives, abandons, and surrenders all of\nAffirmer's Copyright and Related Rights\
+    \ and associated claims and causes\nof action, whether now known or unknown (including\
+    \ existing as well as\nfuture claims and causes of action), in the Work (i) in\
+    \ all territories\nworldwide, (ii) for the maximum duration provided by applicable\
+    \ law or\ntreaty (including future time extensions), (iii) in any current or future\n\
+    medium and for any number of copies, and (iv) for any purpose whatsoever,\nincluding\
+    \ without limitation commercial, advertising or promotional\npurposes (the \"\
+    Waiver\"). Affirmer makes the Waiver for the benefit of each\nmember of the public\
+    \ at large and to the detriment of Affirmer's heirs and\nsuccessors, fully intending\
+    \ that such Waiver shall not be subject to\nrevocation, rescission, cancellation,\
+    \ termination, or any other legal or\nequitable action to disrupt the quiet enjoyment\
+    \ of the Work by the public\nas contemplated by Affirmer's express Statement of\
+    \ Purpose.\n\n3. Public License Fallback. Should any part of the Waiver for any\
+    \ reason\nbe judged legally invalid or ineffective under applicable law, then\
+    \ the\nWaiver shall be preserved to the maximum extent permitted taking into\n\
+    account Affirmer's express Statement of Purpose. In addition, to the\nextent the\
+    \ Waiver is so judged Affirmer hereby grants to each affected\nperson a royalty-free,\
+    \ non transferable, non sublicensable, non exclusive,\nirrevocable and unconditional\
+    \ license to exercise Affirmer's Copyright and\nRelated Rights in the Work (i)\
+    \ in all territories worldwide, (ii) for the\nmaximum duration provided by applicable\
+    \ law or treaty (including future\ntime extensions), (iii) in any current or future\
+    \ medium and for any number\nof copies, and (iv) for any purpose whatsoever, including\
+    \ without\nlimitation commercial, advertising or promotional purposes (the\n\"\
+    License\"). The License shall be deemed effective as of the date CC0 was\napplied\
+    \ by Affirmer to the Work. Should any part of the License for any\nreason be judged\
+    \ legally invalid or ineffective under applicable law, such\npartial invalidity\
+    \ or ineffectiveness shall not invalidate the remainder\nof the License, and in\
+    \ such case Affirmer hereby affirms that he or she\nwill not (i) exercise any\
+    \ of his or her remaining Copyright and Related\nRights in the Work or (ii) assert\
+    \ any associated claims and causes of\naction with respect to the Work, in either\
+    \ case contrary to Affirmer's\nexpress Statement of Purpose.\n\n4. Limitations\
+    \ and Disclaimers.\n\n a. No trademark or patent rights held by Affirmer are waived,\
+    \ abandoned,\n    surrendered, licensed or otherwise affected by this document.\n\
+    \ b. Affirmer offers the Work as-is and makes no representations or\n    warranties\
+    \ of any kind concerning the Work, express, implied,\n    statutory or otherwise,\
+    \ including without limitation warranties of\n    title, merchantability, fitness\
+    \ for a particular purpose, non\n    infringement, or the absence of latent or\
+    \ other defects, accuracy, or\n    the present or absence of errors, whether or\
+    \ not discoverable, all to\n    the greatest extent permissible under applicable\
+    \ law.\n c. Affirmer disclaims responsibility for clearing rights of other persons\n\
+    \    that may apply to the Work or any use thereof, including without\n    limitation\
+    \ any person's Copyright and Related Rights in the Work.\n    Further, Affirmer\
+    \ disclaims responsibility for obtaining any necessary\n    consents, permissions\
+    \ or other rights required for any use of the\n    Work.\n d. Affirmer understands\
+    \ and acknowledges that Creative Commons is not a\n    party to this document\
+    \ and has no duty or obligation with respect to\n    this CC0 or use of the Work.\n\
+    \ "
+  licenseId: LicenseRef-CC0-1.0
+  name: Creative Commons Zero v1.0 Universal
+- extractedText: ' MIT License
+
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of
+    this software and associated documentation files (the "Software"), to deal in
+    the Software without restriction, including without limitation the rights to use,
+    copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+    Software, and to permit persons to whom the Software is furnished to do so, subject
+    to the following conditions:
+
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+    PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+    OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. '
+  licenseId: LicenseRef-MIT
+  name: MIT License
+- extractedText: ' BSD is referenced without a version number. Please look up BSD
+    in the License Admin to view the different versions. '
+  licenseId: LicenseRef-fossology-BSD
+  name: BSD
+- extractedText: ' CC-BY is referenced without a version number. Please look up CC-BY
+    in the License Admin to view the different versions. '
+  licenseId: LicenseRef-fossology-CC-BY
+  name: Creative Commons Attribution
+name: /srv/fossology/repository/report
+packages:
+- SPDXID: SPDXRef-upload89
+  checksums:
+  - algorithm: SHA1
+    checksumValue: cc22253ff9f5ffd762dfe6a8a0a5fbf7ba5a9e62
+  - algorithm: SHA256
+    checksumValue: 8ac80f108e1a2755a336eff401388b32368df1c2f66a4615455c1a0973a37be1
+  - algorithm: MD5
+    checksumValue: c5701d5c455589d08c7417fd42596bed
+  copyrightText: NOASSERTION
+  downloadLocation: NOASSERTION
+  filesAnalyzed: true
+  hasFiles:
+  - SPDXRef-item440278
+  - SPDXRef-item440276
+  - SPDXRef-item440277
+  - SPDXRef-item440279
+  - SPDXRef-item440280
+  licenseComments: " licenseInfoInFile determined by Scanners:\n - nomos (\"4.4.0\"\
+    .903df0)\n - monk (\"4.4.0\".903df0)\n - ojo (\"4.4.0\".903df0) "
+  licenseConcluded: NOASSERTION
+  licenseDeclared: LicenseRef-MIT
+  licenseInfoFromFiles:
+  - NOASSERTION
+  name: jQuery-MD5-b985fce4e867773e5fb7a29b4fb5df74c53595d0.zip
+  packageFileName: jQuery-MD5-b985fce4e867773e5fb7a29b4fb5df74c53595d0.zip
+  packageVerificationCode:
+    packageVerificationCodeValue: cb88bfeada4102ebe48c87c1b5e460d8c0c46ef9
+spdxVersion: SPDX-2.3
