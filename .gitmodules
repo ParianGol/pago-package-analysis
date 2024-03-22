@@ -1,0 +1,3 @@
+[submodule "tools/automatization/src/third-party-lib/license-list-data"]
+	path = tools/automatization/src/third-party-lib/license-list-data
+	url = git@github.com:spdx/license-list-data.git
