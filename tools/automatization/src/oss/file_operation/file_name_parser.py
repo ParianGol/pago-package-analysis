@@ -7,6 +7,9 @@ from packageurl.contrib import url2purl
 
 Packet_Version_Pattern = '\-[0-9]+.*[0-9]$'
 License_Name_Pattern_SPDX = '^LicenseName:.*\n$'
+License_ID_Pattern_SPDX = '^LicenseID:.*\n$'
+License_Concluded_Pattern_SPDX = '^LicenseConcluded:.*\n$'
+
 
 class FileNameParserException(Exception):
     pass

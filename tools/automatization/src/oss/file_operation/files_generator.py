@@ -3,6 +3,7 @@ from oss.content_analyzer.read_regex_replacement import ReadRegexReplacement
 from oss.types.operation_case import OperationCase
 from oss.folder_operation.folder_reader import FolderReader
 from oss.file_operation.file_name_parser import FileNameParser
+from oss.types.spdx_files import SpdxFiles
 
 
 class FilesGeneratorException(Exception):
@@ -27,23 +28,24 @@ class MultiplePackageFilesException(FilesGeneratorException):
 
 
 class FilesGenerator:
-    def __init__(self, input_path: str, output_path: str, readme_file: str):
+    def __init__(self, input_path: str, output_path: str, readme_file: str, spdx_files_reader):
         self.input_path = input_path
         self.output_path = output_path
         self.generated_folder_path = ""
         self.readme_file = readme_file
+        self.spdx_files_reader = spdx_files_reader
         self.package_name =  ""
         self.package_version = ""
         self.final_file_path = ""
-    
+
     def generate_files(self):
         result_txt = self.generate_txt_files()
         result_spdx = self.generate_spdx_files()
         self.generatte_readme()
 
     @classmethod
-    def create (cls, input_path: str, output_path: str, readme_file: str):
-        instance = FilesGenerator(input_path, output_path, readme_file)
+    def create (cls, input_path: str, output_path: str, readme_file: str, spdx_files_reader):
+        instance = FilesGenerator(input_path, output_path, readme_file, spdx_files_reader)
         instance.generate_files()
         return instance
     
@@ -82,7 +84,7 @@ class FilesGenerator:
         if not os.path.exists(self.generated_folder_path):
             # Create the directory
             os.makedirs(self.generated_folder_path )
-            print("Directory created successfully!")
+            print(f"Directory {folder_name} created successfully!")
         else:
             print("Directory already exists!")
 
@@ -95,6 +97,29 @@ class FilesGenerator:
             if self.package_version not in self.generated_folder_path:
                 self.add_folder("version-" + self.package_version)
 
+    def save_report(self, fixed_name_part, license_list):
+        self.spdx_files_reader.check_licenses_exit(license_list)
+        missing_map = self.spdx_files_reader.missing_licenses
+        if missing_map:
+            lines = []
+            if SpdxFiles.licenses.value in missing_map:
+                lines.append(f"\nThe following Licenses are not among spdx known licenses:\n")
+                lines.append(f"{missing_map[SpdxFiles.licenses.value]}\n")
+                print(f"The following Licenses are not among spdx known licenses: ")
+                print(f"{missing_map[SpdxFiles.licenses.value]}")
+            else:
+                lines.append(f"\nAll the licenses were valid spdx license\n")
+            if SpdxFiles.exceptions.value in missing_map:
+                lines.append(f"\n-----------------------------------------------------------------------------\n")
+                lines.append(f"\nThe following Licenses are not among spdx exception licenses:\n")
+                lines.append(f"{missing_map[SpdxFiles.exceptions.value]}\n")
+                print (f"-----------------------------------------------------------------------------")
+                print (f">>>>>>>>>>>>   The following Licenses are not among spdx exception licenses: ")
+                print (f"{missing_map[SpdxFiles.exceptions.value]}")
+        report = fixed_name_part + "-report.txt"
+        report_file_path = os.path.join(self.output_path, report)
+        self.save_new_file(lines, report_file_path)
+
     def generate_txt_files(self):
         txt_files = vars(FolderReader(self.input_path, OperationCase.txt))['files']
         if not txt_files:
@@ -106,7 +131,6 @@ class FilesGenerator:
         for txt_file in txt_files:
             file_parser = FileNameParser.create(txt_file, dictionary_replacement_texts, ml_dictionary_replacement_texts)
             self.update_output_path(file_parser.package_name, file_parser.package_version)
-
             self.save_new_file(file_parser.modified_file, file_parser.file_name)
             print(">>>>> Generated Document name: ",  file_parser.file_name)
         return True
@@ -128,6 +152,7 @@ class FilesGenerator:
             self.spdx_to_json(fixed_name_part)
             self.spdx_to_yaml(fixed_name_part)
             self.spdx_to_rdf_xml(fixed_name_part)
+            self.save_report(fixed_name_part, file_parser.licenses_name)
         return True
 
     def generatte_readme(self):

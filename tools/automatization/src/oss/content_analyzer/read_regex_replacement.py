@@ -42,8 +42,9 @@ class ReadRegexReplacement:
             print(f'{e.__class__.__name__}: {e} : {traceback.format_exc()}')
 
     def read_default_configurations(self, operation_case):
-        config_parameter = None
-        default_parameters = {}
+        config_parameter_single = None
+        default_parameters_single = {}
+        default_parameters_multi = {}
         if operation_case == OperationCase.txt:
             config_parameter_single = parser["replacement_regex_txt"]
             default_parameters_single = Default_TXT_Replacements_Single
@@ -53,6 +54,7 @@ class ReadRegexReplacement:
             default_parameters_single = Default_SPDX_Replacements_Single
             default_parameters_multi = Default_SPDX_Replacements_Multi
         return (config_parameter_single, default_parameters_single) , default_parameters_multi
+
     @staticmethod
     def get_text_and_replacement_from_cmd(config_parameter, default_parameters):
         """
